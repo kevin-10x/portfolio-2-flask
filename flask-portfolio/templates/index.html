@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+        <img
+        src="{{ url_for('static', filename='images/profile.jpg.png') }}"
+        alt="Kevin Kipkoech"
+        class="profile-image">
+
+        <h1>Hello, I'm Kevin Kipkoech</h1>
+
+        <h2>Python • Flask • React Developer</h2>
+
+        <p>
+            I build modern web applications,
+            AI solutions, and software that solves
+            real-world problems.
+        </p>
+
+        <a href="/projects" class="btn">
+            View My Work
+        </a>
+
+    </div>
+
+</section>
+
+<section class="skills">
+
+    <h2>Skills</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>Backend development and automation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Flask</h3>
+            <p>REST APIs and web applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>React</h3>
+            <p>Interactive frontend interfaces.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI</h3>
+            <p>Machine learning and intelligent systems.</p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

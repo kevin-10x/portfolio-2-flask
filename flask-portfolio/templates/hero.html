@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}
+Hero
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <h1>Hi � I'm a developer</h1>
+  <p>Welcome to my portfolio site.</p>
+ <p> Kevin Kipkoech Kimutai is a highly motivated and passionate Software Engineering student at the University of
+Eastern Africa Baraton with a strong background in software development, artificial intelligence, and modern web
+technologies. He possesses both front-end and back-end development skills and has practical experience working with
+AI data annotation, machine learning dataset preparation, backend systems, and scalable web application development.</p>
+<p>Kevin has developed a strong interest in emerging technologies such as Artificial Intelligence, Large Language Models
+(LLMs), machine learning systems, and function calling architectures used in modern AI applications. He is constantly
+exploring innovative ways technology can be used to solve real-world challenges affecting businesses and communities.
+As the founder of Hauzral Technologies, a growing technology startup based in Eldoret, Kenya, Kevin has
+demonstrated leadership, creativity, and entrepreneurial thinking. Through his startup, he aims to create scalable digital
+solutions, intelligent software systems, and AI-powered technologies that can contribute to the growth of businesses
+and the digital transformation of society.</p>
+<p>He is a fast learner with strong analytical thinking abilities, excellent attention to detail, and a deep passion for
+continuous learning and professional growth. Kevin enjoys working on challenging projects, collaborating with teams,
+and building systems that are efficient, secure, user-friendly, and impactful.</p>
+</section>
+<section class="hero">
+
+    <img src="{{ url_for('static',
+    filename='images/profile.jpg.png') }}">
+
+    <h1>Kevin Kipkoech</h1>
+
+    <p>
+        Python Developer |
+        Flask Developer |
+        React Developer
+    </p>
+    <div class="social-icons">
+
+    <a href="#">
+        GitHub
+    </a>
+
+    <a href="#">
+        LinkedIn
+    </a>
+
+    <a href="#">
+        X
+    </a>
+
+</div>
+
+</section>
+
+{% endblock %}

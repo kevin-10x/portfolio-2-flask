@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+Projects
+{% endblock %}
+
+{% block content %}
+
+<h1>Projects</h1>
+
+{% if repos %}
+    <p>Repositories from GitHub for {{ config.GITHUB_USERNAME }}:</p>
+    <ul>
+    {% for repo in repos %}
+        <li>
+            <strong>{{ repo.name }}</strong>
+            <div>{{ repo.description }}</div>
+            <a href="{{ repo.html_url }}" target="_blank">View on GitHub</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Here are some of my projects (static list):</p>
+    <ul>
+        <li><a href="https://github.com/kevin-10x/HAUZRALADAMAE" target="_blank">Portfolio Website</a></li>
+        <li>Weather App</li>
+        <li>Task Manager</li>
+        <li>FreeCodeCamp Responsive Web Design</li>
+        <li>Salon Appointment Scheduler</li>
+        <li>Periodic Table Database</li>
+        <li>Dragon Repeller Game</li>
+        <li><a href="https://github.com/kevin-10x/KENYA-HIGHSCHOOL-MANAGEMENT-SYSTEM" target="_blank">KENYA-HIGHSCHOOL-MANAGEMENT-SYSTEM</a></li>
+        <li><a href="https://github.com/kevin-10x/FINTECH-START-UP" target="_blank">FINTECH-START-UP</a></li>
+        <li><a href="https://github.com/kevin-10x/DELIVERY-SERVICES--ZRAL" target="_blank">DELIVERY-SERVICES--ZRAL</a></li>
+        <li><a href="https://github.com/kevin-10x/Agri-food-Supply-Chain-Management-System" target="_blank">Agri-food-Supply-Chain-Management-System</a></li>
+        <li>Smart Surveillance System (future project)</li>
+    </ul>
+{% endif %}
+
+{% endblock %}
